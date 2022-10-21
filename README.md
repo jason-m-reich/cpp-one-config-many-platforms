@@ -5,7 +5,7 @@
 ![build](https://github.com/jason-m-reich/cpp-one-config-many-platforms/actions/workflows/build-windows.yml/badge.svg)
 ![tests](https://github.com/jason-m-reich/cpp-one-config-many-platforms/actions/workflows/run-unit-tests.yml/badge.svg)
 
-[I posted an article discussing this repository on my blog](https://www.jason-m-reich.com/cross-platform-cpp-with-one-config/)
+I posted an article discussing this repository [here](https://www.jason-m-reich.com/cross-platform-cpp-with-one-config/)
 
 ## Requirements
 
