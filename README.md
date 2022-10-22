@@ -97,7 +97,10 @@ At the time of this writing, CLion only supports CMake Presets versions 2 and 3.
 Until this changes, you can skip using CMakePresets.json altogether and use the normal CLion workflow for CMake projects... with the one caveat that you will have to manually tell CLion (and CMake) about vcpkg in the following way:
 
 - Open the root directory of this project in CLion
-- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field `-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake`
+- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field 
+```
+-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
+```
 
 You should now be able to use CLion with CMake normally by selecting either main or unit_tests configurations from the dropdown next to the green run icon at the top of the screen.
 
