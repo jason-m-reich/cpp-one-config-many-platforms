@@ -100,6 +100,17 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
+Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+
+```
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+FetchContent_MakeAvailable(googletest)
+```
+
 You should now be able to use CLion with CMake normally by selecting either main or unit_tests configurations from the dropdown next to the green run icon at the top of the screen.
 
 #### Terminal Users
@@ -171,6 +182,17 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 
 - Open the root directory of this project in CLion
 - In the Open Project Wizard window that appears, paste the following in the "CMake options:" field `-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake`
+
+Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+
+```
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+FetchContent_MakeAvailable(googletest)
+```
 
 You should now be able to use CLion with CMake normally by selecting either main or unit_tests configurations from the dropdown next to the green run icon at the top of the screen.
 
@@ -268,6 +290,17 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 
 - Open the root directory of this project in CLion
 - In the Open Project Wizard window that appears, paste the following in the "CMake options:" field `-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake`
+
+Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+
+```
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+FetchContent_MakeAvailable(googletest)
+```
 
 You should now be able to use CLion with CMake normally by selecting either main or unit_tests configurations from the dropdown next to the green run icon at the top of the screen.
 
