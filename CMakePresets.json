@@ -56,7 +56,8 @@
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/${presetName}",
       "cacheVariables": {
-        "CMAKE_CXX_COMPILER": "g++",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
         "CMAKE_TOOLCHAIN_FILE": {
@@ -80,7 +81,8 @@
       "generator": "Ninja",
       "binaryDir": "${sourceDir}/${presetName}",
       "cacheVariables": {
-        "CMAKE_CXX_COMPILER": "g++",
+        "CMAKE_C_COMPILER": "clang",
+        "CMAKE_CXX_COMPILER": "clang++",
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/install/${presetName}",
         "CMAKE_TOOLCHAIN_FILE": {
