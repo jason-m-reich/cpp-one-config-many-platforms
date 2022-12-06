@@ -181,7 +181,10 @@ At the time of this writing, CLion only supports CMake Presets versions 2 and 3.
 Until this changes, you can skip using CMakePresets.json altogether and use the normal CLion workflow for CMake projects... with the one caveat that you will have to manually tell CLion (and CMake) about vcpkg in the following way:
 
 - Open the root directory of this project in CLion
-- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field `-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake`
+- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field
+```
+-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
+```
 
 Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
 
@@ -289,7 +292,9 @@ At the time of this writing, CLion only supports CMake Presets versions 2 and 3.
 Until this changes, you can skip using CMakePresets.json altogether and use the normal CLion workflow for CMake projects... with the one caveat that you will have to manually tell CLion (and CMake) about vcpkg in the following way:
 
 - Open the root directory of this project in CLion
-- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field `-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake`
+- In the Open Project Wizard window that appears, paste the following in the "CMake options:" field 
+```-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
+```
 
 Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
 
