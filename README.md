@@ -9,9 +9,7 @@ I posted an article discussing this repository [here](https://www.jason-m-reich.
 
 ## Requirements
 
-There more individualized requirements appear in each platforms' getting started section; the ones here are not listed in any of those sections.
-
-- CMake 3.21 or higher
+CMake 3.21 or higher is indicated in the CMakeLists.txt file. Platform specific requirements appear in each platforms' getting started section.
 
 ## Getting Started
 
