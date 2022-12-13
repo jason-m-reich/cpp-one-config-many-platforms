@@ -100,7 +100,7 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
-Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+Also, for CLion, please remove "gtest" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
 
 ```
 include(FetchContent)
@@ -186,7 +186,7 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 -DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
-Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+Also, for CLion, please remove "gtest" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
 
 ```
 include(FetchContent)
@@ -296,7 +296,7 @@ Until this changes, you can skip using CMakePresets.json altogether and use the 
 ```-DCMAKE_TOOLCHAIN_FILE=vcpkg/scripts/buildsystems/vcpkg.cmake
 ```
 
-Also, for CLion, please remove "gtests" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
+Also, for CLion, please remove "gtest" from vcpkg.json and add the following to the CMakeLists.txt file in the unit tests folder: 
 
 ```
 include(FetchContent)
